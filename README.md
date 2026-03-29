@@ -154,6 +154,12 @@ daemon.mjs          主循环：poll → dispatch → send
 5. **长消息分割** — 超过 4000 字自动分割成多条发送
 6. **错误恢复** — session 异常自动关闭并重建
 
+## 致谢
+
+- [@tencent-weixin/openclaw-weixin](https://github.com/nicepkg/openclaw) — 微信 ClawBot iLink API 协议参考
+- [claude-code-wechat-channel](https://github.com/Johnixr/claude-code-wechat-channel) — iLink 接口实现和 typing indicator 机制参考
+- [claude-to-im](https://github.com/anthropics/claude-to-im) — 飞书 bridge 架构参考，消息队列、session 管理、Agent SDK 调用模式的灵感来源
+
 ## License
 
 MIT
