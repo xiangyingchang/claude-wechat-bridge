@@ -35,7 +35,7 @@ cd claude-wechat-bridge
 ### 2. 配置环境变量
 
 ```bash
-# 必需：Claude Code 可执行文件路径
+# 可选：Claude Code 可执行文件路径（默认会在 PATH 中查找 claude）
 export CLAUDE_CODE_EXECUTABLE=/usr/local/bin/claude
 # 或 Claude Code Internal:
 # export CLAUDE_CODE_EXECUTABLE=$HOME/.npm-global/bin/claude-internal
@@ -128,7 +128,7 @@ launchctl load ~/Library/LaunchAgents/com.wechat-bridge.plist
 
 | 变量 | 必需 | 默认值 | 说明 |
 |------|------|--------|------|
-| `CLAUDE_CODE_EXECUTABLE` | 是 | `claude` | Claude Code 可执行文件路径 |
+| `CLAUDE_CODE_EXECUTABLE` | 否 | `claude` | Claude Code 可执行文件路径 |
 | `ANTHROPIC_BASE_URL` | 否 | (SDK 默认) | API endpoint |
 | `ANTHROPIC_AUTH_TOKEN` | 否 | (SDK 默认) | API 认证 token |
 | `WECHAT_BRIDGE_MODEL` | 否 | `claude-sonnet-4-6` | 默认模型 |
