@@ -1,0 +1,10 @@
+credentials.json
+sync_buf.txt
+context_tokens.json
+state.json
+qrcode.png
+node_modules/
+logs/
+*.log
+.env
+.DS_Store

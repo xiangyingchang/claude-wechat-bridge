@@ -1,0 +1,16 @@
+{
+  "name": "claude-wechat-bridge",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Bridge WeChat ClawBot messages to Claude Code via Agent SDK",
+  "main": "daemon.mjs",
+  "scripts": {
+    "setup": "node daemon.mjs --setup",
+    "start": "node daemon.mjs"
+  },
+  "keywords": ["claude", "wechat", "clawbot", "bridge", "agent-sdk", "claude-code"],
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
